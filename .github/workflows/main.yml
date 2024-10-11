@@ -19,7 +19,7 @@ jobs:
           root_file: main.tex
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
           pre_compile: tlmgr update --self && tlmgr update --all
-          post_compile: latexmk -c && mv main.pdf lecture_notes.pdf
+          post_compile: latexmk -c && mv main.pdf bachelor_thesis.pdf
 
     - name: Check pdf file
       run: |
@@ -28,4 +28,4 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
           commit_message: Update lecture notes PDF
-          file_pattern: lecture_notes.pdf
+          file_pattern: bachelor_thesis.pdf
