@@ -23,7 +23,7 @@ jobs:
 
     - name: Check pdf file
       run: |
-        file lecture_notes.pdf | grep -q ' PDF '
+        file bachelor_thesis.pdf | grep -q ' PDF '
     - name: Upload file to repository
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
