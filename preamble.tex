@@ -1,0 +1,172 @@
+\documentclass[11pt, a4paper, english]{article}
+
+\usepackage[english]{babel}
+\usepackage{BA_Titelseite}
+
+\author{Ayushi Tsydendorzhiev}
+\geburtsdatum{19. Februar 1997}
+\geburtsort{Tschita, Russland}
+\date{17 September 2024}
+\betreuer{Betreuer: Prof. Dr. Philipp Hieronymi}
+\zweitgutachter{Zweitgutachter: Dr. Tingxiang Zou}
+\institut{Mathematisches Institut}
+\title{Bridging Model Theory and Machine Learning}
+\ausarbeitungstyp{Bachelorarbeit Mathematik}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic]{biblatex}
+\addbibresource{literature.bib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[thref, standard, amsmath]{ntheorem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{csquotes}
+\usepackage[colorlinks=true, allcolors=BlueViolet]{hyperref}
+\usepackage[capitalise]{cleveref}
+\usepackage{mathtools}
+\usepackage{marginnote}
+\usepackage{enumitem}
+\setlist[enumerate]{label={\alph*)}}
+\renewcommand*{\marginfont}{\footnotesize\normalfont}
+\usepackage{outlines}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usepackage{tikz-qtree}
+
+%%%%%%%%% mathematical bold  %%%%%%%%%%%%%%%%%
+
+\newcommand{\bA}{\mathbb{A}}
+\newcommand{\bB}{\mathbb{B}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\Cs}{\bC^\times}
+\newcommand{\bD}{\mathbb{D}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bH}{\mathbb{H}}
+\newcommand{\bI}{\mathbb{I}}
+\newcommand{\bJ}{\mathbb{J}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bL}{\mathbb{L}}
+\newcommand{\bM}{\mathbb{M}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\bO}{\mathbb{O}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bp}{\mathbb{p}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\bS}{\mathbb{S}}
+\newcommand{\bT}{\mathbb{T}}
+\newcommand{\bU}{\mathbb{U}}
+\newcommand{\bV}{\mathbb{V}}
+\newcommand{\bW}{\mathbb{W}}
+\newcommand{\bX}{\mathbb{X}}
+\newcommand{\bY}{\mathbb{Y}}
+\newcommand{\Z}{\mathbb{Z}}
+
+%%%%%%%%% calligraphic %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cm}{\mathcal{m}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
+
+%%%%%%%%% mathematical fraktur  %%%%%%%%%%%%%%
+
+\newcommand{\mf}[1]{\mathfrak{#1}}
+\newcommand{\fb}{\mathfrak{b}}
+\newcommand{\fc}{\mathfrak{c}}
+\newcommand{\fA}{\mathfrak{A}}
+\newcommand{\fB}{\mathfrak{B}}
+\newcommand{\fC}{\mathfrak{C}}
+\newcommand{\fD}{\mathfrak{D}}
+\newcommand{\fE}{\mathfrak{E}}
+\newcommand{\fF}{\mathfrak{F}}
+\newcommand{\fG}{\mathfrak{G}}
+\newcommand{\fH}{\mathfrak{H}}
+\newcommand{\fI}{\mathfrak{I}}
+\newcommand{\fJ}{\mathfrak{J}}
+\newcommand{\fK}{\mathfrak{K}}
+\newcommand{\fL}{\mathfrak{L}}
+\newcommand{\fm}{\mathfrak{m}}
+\newcommand{\fN}{\mathfrak{N}}
+\newcommand{\fO}{\mathfrak{O}}
+\newcommand{\fp}{\mathfrak{p}}
+\newcommand{\fQ}{\mathfrak{Q}}
+\newcommand{\fq}{\mathfrak{q}}
+\newcommand{\fR}{\mathfrak{R}}
+\newcommand{\fS}{\mathfrak{S}}
+\newcommand{\fT}{\mathfrak{T}}
+\newcommand{\fU}{\mathfrak{U}}
+\newcommand{\fV}{\mathfrak{V}}
+\newcommand{\fW}{\mathfrak{W}}
+\newcommand{\fX}{\mathfrak{X}}
+\newcommand{\fY}{\mathfrak{Y}}
+\newcommand{\fZ}{\mathfrak{Z}}
+
+%%%%%%%%%    math operators    %%%%%%%%%%%%%%%
+
+\let\leq=\leqslant
+\let\geq=\geqslant 
+
+%%%%%%%%%    further commands  %%%%%%%%%%%%%%%
+% Outlines configurations
+
+\makeatletter
+% the outline environment provides commands \1..\4 for
+% introducing items at level 1..4, and \0 for normal paragraphs
+% within the outline section.
+\renewenvironment{outline}[1][]{%
+  \ifthenelse{\equal{#1}{}}{}{\renewcommand{\ol@type}{#1}}%
+  \ol@z%
+  \newcommand{\0}{\ol@toz\ol@z}%
+  \newcommand{\1}{\vspace{\dimexpr\outlinespacingscalar\baselineskip-\baselineskip}\ol@toi\ol@i\item}%
+  \newcommand{\2}{\vspace{\dimexpr\outlinespacingscalar\baselineskip-\baselineskip}\ol@toii\ol@ii\item}%
+  \newcommand{\3}{\vspace{\dimexpr\outlinespacingscalar\baselineskip-\baselineskip}\ol@toiii\ol@iii\item}%
+  \newcommand{\4}{\vspace{\dimexpr\outlinespacingscalar\baselineskip-\baselineskip}\ol@toiiii\ol@iiii\item}%
+}{%
+  \ol@toz\ol@exit%
+}
+\makeatother
+
+%%%%%%%%%    thm environments  %%%%%%%%%%%%%%%
+\numberwithin{lemma}{section} 
+\numberwithin{theorem}{section} 
+\numberwithin{example}{section}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\renewtheorem{lemma}[thm]{Lemma}
+\renewtheorem{corollary}[thm]{Corollary}
+
+\theorembodyfont{\normalfont}
+\renewtheorem{definition}[thm]{Definition}
+\renewtheorem{remark}[thm]{Remark}
+\renewtheorem{example}[thm]{Example}
+\newtheorem{fact}[thm]{Fact}
