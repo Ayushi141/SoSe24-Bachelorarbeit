@@ -18,6 +18,7 @@ jobs:
       with:
           root_file: main.tex
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+          pre_compile: update-tlmgr-latest(.sh/.exe) --update
           post_compile: latexmk -c && mv main.pdf bachelor_thesis.pdf
 
     - name: Check pdf file
