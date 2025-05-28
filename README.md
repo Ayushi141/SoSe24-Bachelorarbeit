@@ -6,7 +6,7 @@ This thesis is directly inspired by:
 
 > Chase, H., & Freitag, J. (2019). Model theory and machine learning. *Bulletin of Symbolic Logic*, 25(3), 319-332. [doi:10.1017/bsl.2019.20](https://doi.org/10.1017/bsl.2018.71)
 
-We aim to provide a comprehensive exposition of the fundamental connections between model theory and machine learning theory, establishing rigorous proofs for the equivalences between logical stability properties and computational learning paradigms. Building upon the foundational work of Chase and Freitag (2019), we present detailed proofs and accessible explanations of two central results:
+We aim to provide a comprehensive exposition of the fundamental connections between model theory and machine learning theory, establishing rigorous proofs for the equivalences between logical stability properties and computational learning paradigms. Filling in the details in the paper of Chase and Freitag, we present detailed proofs and accessible explanations of two central results:
 
 1. **NIP theories ↔ PAC learnable concept classes**
 2. **Stable theories ↔ Online learnable concept classes**
